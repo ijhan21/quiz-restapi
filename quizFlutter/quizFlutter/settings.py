@@ -29,9 +29,9 @@ with open("./config.json", 'r') as f:
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', "django-insecure-h+f-6*3c3t-x@9e@nffnd6zx@)d!gpdy2c09wtwmwi2p#z_18x") # os.environ.get(키, 디폴트 값)
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -127,7 +127,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
